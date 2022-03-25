@@ -37,3 +37,9 @@ class Produto {
         }
         
     }
+    var motorista01: Motorista = new Motorista("Carlos","098573","03274361839",39,"M",carro01);
+    motorista01.InfMoto();
+    
+    console.log("-----Visão total do(a) motorista-----");
+    console.log(motorista01);
+    console.log(carro01);

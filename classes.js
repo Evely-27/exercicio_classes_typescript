@@ -43,3 +43,8 @@ class Motorista {
         console.log(`O nome do(a) motorista é ${this.nome}, com idade ${this.idade} anos , do sexo ${this.sexo} e dirige o caro ${this.carro.marca}`);
     }
 }
+var motorista01 = new Motorista("Carlos", "098573", "03274361839", 39, "M", carro01);
+motorista01.InfMoto();
+console.log("-----Visão total do(a) motorista-----");
+console.log(motorista01);
+console.log(carro01);
