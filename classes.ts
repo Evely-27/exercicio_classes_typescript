@@ -27,5 +27,13 @@ class Produto {
 
     var carro01:Carro = new Carro("Ford",2019,"Crossover");
     carro01.infoCarro();
-    
 
+    class Motorista{
+        constructor(public nome:string,public identidade:string, public cpf:string, public idade:number, public sexo:string, public carro:Carro ){}
+
+        InfMoto():void {
+            console.log("-----Informações Publicas do Motorista-----");
+            console.log(`O nome do(a) motorista é ${this.nome}, com idade ${this.idade} anos , do sexo ${this.sexo} e dirige o caro ${this.carro.marca}`);
+        }
+        
+    }
