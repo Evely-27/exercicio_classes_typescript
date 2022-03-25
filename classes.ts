@@ -14,3 +14,18 @@ class Produto {
 
     chaveiro.infoProduto(); 
     camisa.infoProdutoDesc();
+
+    class Carro {
+        constructor(public marca:string, public ano_lancamento:number, public categoria: string){}
+
+        infoCarro():void{
+            console.log("-------Carro------");
+            console.log(`O carro registrado foi da marca ${this.marca}, lançado no ano ${this.ano_lancamento} na categoria ${this.categoria}.`);
+        }
+    }
+
+
+    var carro01:Carro = new Carro("Ford",2019,"Crossover");
+    carro01.infoCarro();
+    
+
