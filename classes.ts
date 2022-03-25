@@ -2,10 +2,12 @@ class Produto {
     constructor(public nome:string, public preco:number, public desconto?:number){}
 
     infoProduto(): void{
+        console.log("-----Produto registrado-----");
         console.log(`O produto registrado foi um(a) ${this.nome} que custa R$${this.preco} sem desconto.`);
 	}
 
     infoProdutoDesc():void{
+        console.log("-----Produto registrado com desconto-----");
         console.log(`O produto registrado foi um(a) ${this.nome} que custa R$${this.preco} com desconto de ${this.desconto}%.`);
     }
 }
@@ -19,7 +21,7 @@ class Produto {
         constructor(public marca:string, public ano_lancamento:number, public categoria: string){}
 
         infoCarro():void{
-            console.log("-------Carro------");
+            console.log("-------Carro Registrado------");
             console.log(`O carro registrado foi da marca ${this.marca}, lançado no ano ${this.ano_lancamento} na categoria ${this.categoria}.`);
         }
     }

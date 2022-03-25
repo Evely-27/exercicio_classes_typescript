@@ -6,9 +6,11 @@ class Produto {
         this.desconto = desconto;
     }
     infoProduto() {
+        console.log("-----Produto registrado-----");
         console.log(`O produto registrado foi um(a) ${this.nome} que custa R$${this.preco} sem desconto.`);
     }
     infoProdutoDesc() {
+        console.log("-----Produto registrado com desconto-----");
         console.log(`O produto registrado foi um(a) ${this.nome} que custa R$${this.preco} com desconto de ${this.desconto}%.`);
     }
 }
@@ -23,7 +25,7 @@ class Carro {
         this.categoria = categoria;
     }
     infoCarro() {
-        console.log("-------Carro------");
+        console.log("-------Carro Registrado------");
         console.log(`O carro registrado foi da marca ${this.marca}, lançado no ano ${this.ano_lancamento} na categoria ${this.categoria}.`);
     }
 }
